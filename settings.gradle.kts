@@ -1,5 +1,10 @@
 pluginManagement {
     repositories {
+        // 国内镜像源，加速依赖下载
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/public")
+        maven("https://maven.aliyun.com/repository/gradle-plugin")
+        
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -14,6 +19,11 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        // 国内镜像源，加速依赖下载
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/public")
+        maven("https://maven.aliyun.com/repository/central")
+        
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
